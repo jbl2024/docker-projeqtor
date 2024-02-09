@@ -4,6 +4,15 @@ services:
   projeqtor:
     build:
       context: .
+    environment:
+      DB_TYPE: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: projeqtor
+      DB_PASSWORD: projeqtor
+      DB_NAME: projeqtor
+      DB_DISPLAY_NAME: ProjeQtOr
+      DB_PREFIX: ''
     ports:
       - "8080:80"
     depends_on:
