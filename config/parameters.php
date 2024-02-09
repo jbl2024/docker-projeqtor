@@ -2,14 +2,14 @@
 // =======================================================================================
 // Automatically generated parameter file
 // =======================================================================================
-$paramDbType = 'pgsql';
-$paramDbHost = 'db';
-$paramDbPort = '5432';
-$paramDbUser = 'projeqtor';
-$paramDbPassword = 'projeqtor';
-$paramDbName = 'projeqtor';
-$paramDbDisplayName = 'ProjeQtOr';
-$paramDbPrefix = '';
+$paramDbType = getenv('DB_TYPE') ?: 'pgsql';
+$paramDbHost = getenv('DB_HOST') ?: 'db';
+$paramDbPort = getenv('DB_PORT') ?: '5432';
+$paramDbUser = getenv('DB_USER') ?: 'projeqtor';
+$paramDbPassword = getenv('DB_PASSWORD') ?: 'projeqtor';
+$paramDbName = getenv('DB_NAME') ?: 'projeqtor';
+$paramDbDisplayName = getenv('DB_DISPLAY_NAME') ?: 'ProjeQtOr';
+$paramDbPrefix = getenv('DB_PREFIX') ?: '';
 $SslKey = '';
 $SslCert = '';
 $SslCa = '';
